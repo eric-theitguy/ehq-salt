@@ -1,0 +1,4 @@
+prd:
+  '*-*p*':
+    - users
+    - groups
