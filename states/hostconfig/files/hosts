@@ -3,4 +3,4 @@
 
 {{ local_ip_address }}	{{ local_host_name }} 	{{ host }}
 
-10.0.0.3	ehq-utl-p01.ehendricks.name	ehq-utl-p01
+10.0.0.3	ehq-utl-p01.home.ehendricks.name	ehq-utl-p01
