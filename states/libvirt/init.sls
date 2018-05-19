@@ -4,10 +4,7 @@ libvirt:
     - name: /etc/sysconfig/libvirtd
     - contents: 'libvirtd_args="--listent"'
     - require:
-      - pkg: libvirt
-  virt.keys:
-    - require:
-      - pkg: libvirt
+      -pkg: libvirt
   service.running:
     - name: libvirtd
     - require:
@@ -20,12 +17,11 @@ libvirt:
 libvirt-python:
   pkg.installed: []
 
-libguestfs:
+libvirt-guestfs:
   pkg.installed:
-    - pkg.installed:
-      - pkgs:
-        - libguestfs
-        - libguestfs-tools
+    - pkgs:
+      - libguestfs
+      - libguestfs-tools
 
-libvirt-keys:
+libvirt.keys:
   virt.keys
