@@ -1,27 +1,26 @@
-libvirt:
-  pkg.installed: []
-  file.managed:
-    - name: /etc/sysconfig/libvirtd
-    - contents: 'libvirtd_args="--listent"'
-    - require:
-      -pkg: libvirt
+libvirt-repo:
+  pkgrepo.managed:
+    - humanname: libvirt-latest
+    - baseurl: http://mirror.centos.org/centos/7/virt/x86_64/libvirt-latest/
+    - gpgcheck: 0
+    - require_in:
+      - pkg: libvirt-install
+
+libvirt-install:
+  pkg.installed:
+    - pks:
+      - qemu-kvm
+      - libguestfs
+      - libguestfs-tools
+      - libvirt-python
+
+libvirt-daemon:
   service.running:
     - name: libvirtd
     - require:
       - pkg: libvirt
       - network: virbr0
       - libvirt: libvirt
-    - watch:
-      - file: libvirt
-
-libvirt-python:
-  pkg.installed: []
-
-libvirt-guestfs:
-  pkg.installed:
-    - pkgs:
-      - libguestfs
-      - libguestfs-tools
 
 libvirt.keys:
   virt.keys
