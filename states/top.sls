@@ -1,5 +1,5 @@
 base:
-  '*':
+  "*":
     - bashrc
     - cron
     - groups
