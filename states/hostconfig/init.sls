@@ -1,6 +1,6 @@
 include:
+  #  - hostconfig.grains
   - hostconfig.hosts
-  - hostconfig.grains
-  - hostconfig.timezone
-  - hostconfig.locale
+  #  - hostconfig.locale
   - hostconfig.sysctl
+  #  - hostconfig.timezone

@@ -1,6 +1,4 @@
 # Install and configure a GitLab server
-#include:
-  #  - hostconfig.postfix
 
 gitlab:
   pkgrepo.managed:
@@ -20,7 +18,7 @@ gitlab_install:
       - pygpgme
       - yum-utils
     - include:
-      - hostconfig.postfix
+      - postfix
 
 /etc/gitlab/gitlab.rb:
   file.managed:
