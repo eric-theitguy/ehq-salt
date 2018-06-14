@@ -5,4 +5,3 @@ dev:
     - hostconfig
     - ntp
     - vim
-    - yum
