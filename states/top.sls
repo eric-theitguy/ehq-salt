@@ -5,6 +5,5 @@ dev:
     - groups
     - hostconfig
     - ntp
-    - users
     - vim
     - yum
