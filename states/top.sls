@@ -5,4 +5,3 @@ base:
     - ntp
     - users
     - vim
-    - yum
