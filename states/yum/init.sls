@@ -1,2 +1,2 @@
 include:
-  - epel.sls
+  - yum.epel.sls
