@@ -1,4 +1,8 @@
-prd:
-  '*-*p*':
+base:
+  '*':
+    - bashrc
+    - cron
+    - ntp
     - users
-    - groups
+    - vim
+    - yum
