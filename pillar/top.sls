@@ -1,2 +1,3 @@
-{{ saltenv }}:
+base:
   '*':
+    - users
