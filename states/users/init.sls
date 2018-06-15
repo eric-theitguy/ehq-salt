@@ -1,9 +1,9 @@
-{{ pillar['base_user']['name'] }}:
+ehendricks:
   user.present:
-    - fullname: {{ pillar['base_user']['fullname'] }}
+    - fullname: Eric Hendricks
     - shell: /bin/bash
-    - home: /home/{{ pillar['base_user']['name'] }}
-    - uid: {{ pillar['base_user']['uid'] }}
-    - gid: {{ pillar['base_user']['gid'] }}
-    - password: {{ pillar['base_user']['password'] }}
-    - groups: {{ pillar['base_user']['groups'] }}
+    - home: /home/ehendricks
+    - uid: 2001
+    - gid: 2001
+    groups:
+      - wheel
