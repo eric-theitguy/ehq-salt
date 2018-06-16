@@ -13,4 +13,4 @@ ehendricks-sshkey:
     - name: {{ salt['pillar.get']('ehendricks:ssh-key', "") }}
     - user: ehendricks
     - require:
-      - user: ehendricks
+      - user: ehendricks-user
