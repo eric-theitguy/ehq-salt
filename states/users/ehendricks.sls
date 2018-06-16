@@ -1,4 +1,4 @@
-ehendricks:
+ehendricks-user:
   user.present:
     - gid: wheel
     - uid: 2001
