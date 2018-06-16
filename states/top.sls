@@ -4,5 +4,6 @@ dev:
     - cron
     - hostconfig
     - ntp
+    - yum
     - yum.patch
     - vim

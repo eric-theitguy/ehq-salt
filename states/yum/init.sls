@@ -1,2 +1,9 @@
-include:
-  - yum.epel.sls
+util-packages:
+  pkg.installed:
+    - pkgs:
+      - at
+      - epel-release
+      - git
+      - htop
+      - unzip
+      - zip
