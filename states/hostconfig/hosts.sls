@@ -8,5 +8,5 @@ hosts:
     - template: jinja
     - context:
        host: {{ grains['host'] }}
-     local_ip_address: salt['grains.get'](fqdn_ip4:tap0')[0] 
+       local_ip_address: {{ grains['ipv4'][0] }}
        local_host_name: {{ grains['fqdn'] }}
