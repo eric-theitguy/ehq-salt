@@ -1,4 +1,4 @@
-ehendricks-user:
+ehendricks:
   user.present:
     - gid: wheel
     - uid: 2001
@@ -13,4 +13,4 @@ ehendricks-sshkey:
     - name: {{ salt['pillar.get']('ehendricks:ssh-key', "") }}
     - user: ehendricks
     - require:
-      - user: ehendricks-user
+      - user: ehendricks
