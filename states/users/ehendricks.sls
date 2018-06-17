@@ -10,7 +10,7 @@ ehendricks:
 
 ehendricks-sshkey:
   ssh_auth.present:
-    - name: {{ salt['pillar.get']('ehendricks:ssh-key', "") }}
     - user: ehendricks
+    - name: {{ salt['pillar.get']('ehendricks:ssh-key', '') }} 
     - require:
       - user: ehendricks
