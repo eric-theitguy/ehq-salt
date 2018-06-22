@@ -9,10 +9,11 @@ lynis_repo:
 
 lynis_install:
   pkg.installed:
-    - name: lynis
-  - require:
-    - sls: lynis_repo
-    - pkg: ca-certificates
-    - pkg: curl
-    - pkg: nss
-    - pkg: openssl
+    - pkgs:
+      - lynis
+    - require:
+      - sls: lynis_repo
+      - pkg: ca-certificates
+      - pkg: curl
+      - pkg: nss
+      - pkg: openssl
