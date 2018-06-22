@@ -3,6 +3,7 @@ dev:
     - bashrc
     - cron
     - hostconfig
+    - lynis
     - ntp
     - users
     - vim
