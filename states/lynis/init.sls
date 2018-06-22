@@ -8,7 +8,7 @@ lynis_repo:
     - enabled: True
 
 lynis_install:
-  - pkg.installed:
+  pkg.installed:
     - name: lynis
     - require:
       - sls: lynis_repo
