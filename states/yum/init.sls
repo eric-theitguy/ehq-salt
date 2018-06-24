@@ -1,2 +1,12 @@
 include:
-  - yum.epel.sls
+  - yum.patch
+  
+util-packages:
+  pkg.installed:
+    - pkgs:
+      - at
+      - epel-release
+      - git
+      - htop
+      - unzip
+      - zip

@@ -1,9 +1,16 @@
-{{ pillar['base_user']['name'] }}:
+ehendricks:
   user.present:
-    - name: {{ pillar['base_user']['name'] }}
+    - gid: wheel
+    - uid: 2001
+    - unique: False
     - shell: /bin/bash
-    - home: /home/{{ pillar['base_user']['name'] }}
-    - uid: {{ pillar['base_user']['uid'] }}
-    - gid: {{ pillar['base_user']['gid'] }}
-    - password: {{ pillar['base_user']['password'] }}
-    - groups: {{ pillar['base_user']['groups'] }}
+    - enforce_password: True
+    - password: '!!'
+    - fullname: 'Eric Hendricks'
+
+ehendricks-sshkey:
+  ssh_auth.present:
+    - user: ehendricks
+    - name: {{ salt['pillar.get']('ehendricks:ssh-key', "") }}
+    - require:
+      - user: ehendricks
