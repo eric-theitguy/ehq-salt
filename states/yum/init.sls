@@ -1,3 +1,6 @@
+include:
+  - yum.patch
+  
 util-packages:
   pkg.installed:
     - pkgs:

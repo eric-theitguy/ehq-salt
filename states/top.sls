@@ -10,4 +10,3 @@ dev:
     - users
     - vim
     - yum
-    - yum.patch
