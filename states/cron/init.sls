@@ -1,2 +1,2 @@
 include:
-  - cron.logCleanup.sls
+  - cron.logCleanup
