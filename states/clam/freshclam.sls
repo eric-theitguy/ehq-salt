@@ -17,7 +17,7 @@ freshclam-service:
     - name: clam-freshclam.service
     - running
     - enable: True
-  - require:
-    - file: /usr/lib/systemd/system/clam-freshclam.service
-  - watch:
-    - file: /etc/freshclam.conf
+    - require:
+      - file: /usr/lib/systemd/system/clam-freshclam.service
+    - watch:
+      - file: /etc/freshclam.conf
