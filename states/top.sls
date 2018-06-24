@@ -6,6 +6,7 @@ dev:
     - hostconfig
     - lynis
     - ntp
+    - salt
     - users
     - vim
     - yum
