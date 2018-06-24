@@ -13,9 +13,10 @@
     - source: salt://clam/files/clam-freshclam.service
 
 freshclam-service:
-  - name: clam-freshclam.service
-  - running
-  - enable: True
+  service:
+    - name: clam-freshclam.service
+    - running
+    - enable: True
   - require:
     - file: /usr/lib/systemd/system/clam-freshclam.service
   - watch:
