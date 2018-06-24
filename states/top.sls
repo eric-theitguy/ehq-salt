@@ -1,6 +1,7 @@
 dev:
   '*':
     - bashrc
+    - clam
     - cron
     - hostconfig
     - lynis
