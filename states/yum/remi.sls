@@ -4,3 +4,5 @@ remi-repo:
   pkg.installed:
     - pkgs:
       - http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+    - require:
+      - pkg: epel-release
