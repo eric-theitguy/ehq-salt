@@ -1,5 +1,4 @@
 include:
-  - yum.epel
   - yum.remi
 
 
@@ -10,5 +9,3 @@ include:
   #  - user: root
   #  - group: root
   #  - mode: 644
-
-# install php-process to occ
