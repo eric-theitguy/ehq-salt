@@ -5,7 +5,7 @@ ehendricks:
     - unique: False
     - shell: /bin/bash
     - enforce_password: True
-    - password: '!!'
+      - password: {{ salt['pillar.get']('ehendricks:password', "") }}
     - fullname: 'Eric Hendricks'
 
 ehendricks-sshkey:
