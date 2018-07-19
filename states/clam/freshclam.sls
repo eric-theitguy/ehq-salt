@@ -12,6 +12,13 @@
     - mode: 0644
     - source: salt://clam/files/freshclam.service
 
+antivirus_can_scan_system:
+  selinux.boolean:
+    - value: True
+    - persist: True
+    - require:
+      - pkg: clamav
+
 freshclam-service:
   service:
     - name: freshclam.service
