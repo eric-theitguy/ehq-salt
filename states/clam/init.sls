@@ -34,7 +34,7 @@ clamav:
       - pkg: clamav
 
 /usr/lib/systemd/system/clamd.service:
-  file.present:
+  file.managed:
     - user: root
     - group: root
     - mode: 0644
@@ -43,7 +43,7 @@ clamav:
       - pkg: clamav
 
 /usr/lib/systemd/system/clamd-scan.service:
-  file.present:
+  file.managed:
     - user: root
     - group: root
     - mode: 0644
