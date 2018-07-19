@@ -10,7 +10,7 @@ clamav:
       - clamav-filesystem
       - clamav-lib
       - clamav-scanner-systemd
-      - clamav-server
+      #- clamav-server
       - clamav-server-systemd
       - clamav-update
 
