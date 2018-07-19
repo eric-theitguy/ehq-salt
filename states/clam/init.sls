@@ -1,5 +1,5 @@
-#include:
-#  - clam.freshclam
+include:
+  - clam.freshclam
 
 clamav:
   pkg.installed:
