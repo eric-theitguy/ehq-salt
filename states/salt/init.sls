@@ -11,3 +11,4 @@ saltstack-repo:
     - user: root
     - group: root
     - mode: 0640
+    - source: salt://salt/files/highstate.conf
