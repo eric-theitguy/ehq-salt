@@ -1,10 +1,10 @@
 saltstack-repo:
   pkgrepo.managed:
     - humanname: SaltStack
-    - baseurl: https://repo.saltstack.com/yum/redhat/$releasever/$basearch/archive/2018.3.0
+    - baseurl: https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/
     - enabled: 1
     - gpgcheck: 1
-    - gpgkey: https://repo.saltstack.com/yum/redhat/$releasever/$basearch/archive/2018.3.0/SALTSTACK-GPG-KEY.pub
+    - gpgkey: https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/SALTSTACK-GPG-KEY.pub
 
 /etc/salt/minion.d/highstate.conf:
   file.managed:
