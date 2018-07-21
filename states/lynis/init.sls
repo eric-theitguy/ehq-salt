@@ -16,3 +16,8 @@ lynis_install:
       - curl
       - nss
       - openssl
+
+ansi2html_install:
+  pkg.installed:
+    - pkgs:
+      - https://kojipkgs.fedoraproject.org//packages/python-ansi2html/1.2.0/8.fc29/noarch/python2-ansi2html-1.2.0-8.fc29.noarch.rpm
