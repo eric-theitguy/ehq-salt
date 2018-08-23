@@ -1,3 +1,4 @@
+{% if grains.os == 'CentOS' or 'RedHat' %}
 saltstack:
   pkgrepo.managed:
     - humanname: SaltStack
@@ -5,6 +6,7 @@ saltstack:
     - enabled: 1
     - gpgcheck: 1
     - gpgkey: https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/SALTSTACK-GPG-KEY.pub
+{% endif %}
 
 /etc/salt/minion.d/highstate.conf:
   file.managed:
