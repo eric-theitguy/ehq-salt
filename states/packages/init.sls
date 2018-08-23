@@ -5,8 +5,12 @@ util-packages:
   pkg.installed:
     - pkgs:
       - at
-      - epel-release
       - git
       - htop
       - unzip
       - zip
+    {% if grains.os == 'CentOS' %}
+    # If running CentOS add these additional packages:
+    - pkgs:
+      - epel-release
+    {% endif %}
