@@ -1,4 +1,4 @@
-saltstack-repo:
+saltstack:
   pkgrepo.managed:
     - humanname: SaltStack
     - baseurl: https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/
