@@ -16,4 +16,8 @@ lynis_install:
       - curl
       - nss
       - openssl
+      {% if grains.os == 'CentOS' %}
       - https://kojipkgs.fedoraproject.org//packages/python-ansi2html/1.2.0/8.fc29/noarch/python2-ansi2html-1.2.0-8.fc29.noarch.rpm #ansi2html converts output to html
+      {% elif grains.os == 'Fedora' %}
+      - python-ansi2html
+      {% endif %}
