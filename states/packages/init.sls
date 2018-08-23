@@ -1,5 +1,5 @@
 include:
-  - yum.patch
+  - packages.patch
   
 util-packages:
   pkg.installed:

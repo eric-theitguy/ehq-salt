@@ -5,7 +5,7 @@ base:
     - hostconfig
     - lynis
     - ntp
+    - packages
     - salt
     - users
     - vim
-    - yum
