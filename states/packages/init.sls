@@ -5,7 +5,6 @@ util-packages:
   pkg.installed:
     - pkgs:
       - at
-      - cronie
       - git
       - htop
       - unzip
