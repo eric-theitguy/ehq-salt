@@ -1,4 +1,4 @@
-{% if grains.os == 'CentOS' or 'RedHat' %}
+{% if grains.os == 'CentOS' %}
 saltstack:
   pkgrepo.managed:
     - humanname: SaltStack
