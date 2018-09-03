@@ -3,9 +3,9 @@ base:
     - bashrc
     - cron
     - hostconfig
-    - lynis
+    #- lynis
     - ntp
     - packages
-    - salt
+    #- salt
     - users
     - vim
