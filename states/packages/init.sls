@@ -7,7 +7,9 @@ util-packages:
       - at
       - git
       - htop
+      - sysstat
       - unzip
+      - wget
       - zip
     {% if grains.os == 'CentOS' %}
     # If running CentOS add these additional packages:
