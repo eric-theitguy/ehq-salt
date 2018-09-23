@@ -1,5 +1,6 @@
 deploy:
   user.present:
+    - gid: deploy
     - uid: 1001
     - unique: False
     - shell: /bin/bash
@@ -11,7 +12,7 @@ deploy:
 
 deploy-sshkey:
   ssh_auth.present:
-    - user: ehendricks
+    - user: deploy
     - name: {{ salt['pillar.get']('deploy:ssh-key', "") }}
     - require:
       - user: deploy
