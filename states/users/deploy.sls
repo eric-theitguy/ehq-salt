@@ -1,6 +1,5 @@
 deploy:
   user.present:
-    - gid: deploy
     - uid: 1001
     - unique: False
     - shell: /bin/bash
