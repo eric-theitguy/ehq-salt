@@ -5,6 +5,7 @@ etcd
 
 [OSEv3:vars]
 deployment_type=origin
+openshift_release="3.10"
 openshift_enable_excluders=False
 openshift_disable_check=memory_availability,disk_availability
 openshift_master_default_subdomain=theitguys.us
