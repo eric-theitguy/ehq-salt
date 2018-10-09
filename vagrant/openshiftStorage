@@ -1,0 +1,18 @@
+$lab_script = <<SCRIPT
+cat <<EOF >> /etc/hosts
+172.24.0.11 openshift.example.com openshift
+172.24.0.12 storage.example.com storage
+EOF
+SCRIPT
+
+$lab_openshift = <<SCRIPT
+systemctl disable firewalld
+systemctl stop firewalld
+yum install -y epel-release git
+yum install -y docker
+cat << EOF >/etc/docker/daemon.json
+{
+ "insecure-registries": [
+ "172.30.0.0/16"
+ ]
+}
