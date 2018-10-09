@@ -4,3 +4,4 @@ include:
   #  - hostconfig.locale
   - hostconfig.sysctl
   #  - hostconfig.timezone
+  - hostconfig.sudoers
