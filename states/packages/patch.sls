@@ -1,3 +1,3 @@
 package-upgrade:
-  pkg.uptodate
+  pkg.uptodate:
   - refresh: True
